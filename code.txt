@@ -2,8 +2,8 @@
 
 $posts = get_posts(array(
 	'numberposts' => -1,
-	'post_type' => 'event',
-	'meta_key' => 'location',
+	'post_type' = 'event',
+	'meta_key' = 'location',
 	'meta_value' => 'melbourne'
 ));
 
@@ -13,7 +13,7 @@ if($posts)
 
 	foreach($posts as $post)
 	{
-		echo '<li><a href="' . get_permalink($post->ID) . '">' . get_the_title($post->ID) . '</a></li>';
+		echo '<li><a href="' . get_permalink($post->ID) . '">' . get_title($post->ID) . '</a></li>';
 	}
 
 	echo '</ul>';
